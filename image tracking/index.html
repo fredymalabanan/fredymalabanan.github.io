@@ -29,7 +29,7 @@
             init: function () {
                 var marker = this.el;
 
-                this.vid = document.querySelector("#nissan");
+                this.img = document.querySelector("#trex");
 
                 marker.addEventListener('markerFound', function () {
                     this.vid.play();
@@ -57,7 +57,7 @@
     arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
   >
     <a-assets>
-        <video id="nissan" autoplay loop="true" crossorigin type="video/mp4" preload="auto" src="/image-tracking/nissan.mp4"></video>
+        <image id="nissan" autoplay loop="true" crossorigin type="image/jpg" preload="auto" src="/image-tracking/trex.jpg"></image>
     </a-assets>
     <!-- a-nft is the anchor that defines an Image Tracking entity -->
     <!-- on 'url' use the path to the Image Descriptors created before. -->
