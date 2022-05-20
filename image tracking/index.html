@@ -23,6 +23,12 @@
     color: white;
   }
 </style>
+<script>
+      window.onload = () => {navigator.geolocation.getCurrentPosition((position) => {
+        document.querySelector('a-entity').setAttribute('gps-entity-place', `latitude: ${position.coords.latitude}; longitude: ${position.coords.longitude};`)
+      });
+     }
+ </script>
 
 <body style="margin : 0px; overflow: hidden;">
   <!-- minimal loader shown until image descriptors are loaded. Loading may take a while according to the device computational power -->
