@@ -15,7 +15,7 @@
 
                     console.log(e)
                     let trex = document.querySelector('#trex-model')
-		    trex.setAttribute('animation-mixer', "clip: *; loop: repeat;");
+		    trex.setAttribute('animation-mixer', "clip: *; loop: twice;");
                     this.audio.play();
 			
                 }.bind(this));
@@ -38,7 +38,7 @@
 		    
 			console.log(e)
                     let trex = document.querySelector('#trex-model')
-		    trex.setAttribute('animation-mixer', "clip: *; loop: repeat;");
+		    trex.setAttribute('animation-mixer', "clip: *; loop: twice;");
                     this.audio.play();
                 }.bind(this));
 		    
@@ -68,7 +68,7 @@
       <a-entity event-listener id="trex-model"  
         gltf-model="#trex" 
         scale="0.026 0.026 0.026" 
-        position = "0 0 -15" 
+        position = "0 0 15" 
         rotation="0 -70.5 0 " 
       >
       </a-entity>
