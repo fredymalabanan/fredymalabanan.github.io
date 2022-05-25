@@ -14,7 +14,7 @@
                 this.el.addEventListener('click', function (e) {
 
                     console.log(e)
-                    let trex = document.querySelector('#trex-model')
+                    let trex = document.querySelector('#take 001-model')
 		    trex.setAttribute('animation-mixer', "clip: *; loop: once;");
                     this.audio.play();
 			
@@ -37,7 +37,7 @@
                 this.el.addEventListener('touchstart', function (e) {
 		    
 			console.log(e)
-                    let trex = document.querySelector('#trex-model')
+                    let trex = document.querySelector('#take 001-model')
 		    trex.setAttribute('animation-mixer', "clip: *; loop: once;");
                     this.audio.play();
                 }.bind(this));
@@ -49,7 +49,7 @@
 		
                 this.el.addEventListener('animation-finished', function (e) {
 			 console.log(e)
-                    let trex = document.querySelector('#trex-model')
+                    let trex = document.querySelector('#take 001-model')
 		    trex.removeAttribute('animation-mixer');
                 }.bind(this));
 		
@@ -65,13 +65,6 @@
         <a-asset-item id="take 001" response-type="arraybuffer" src="./trex.glb"></a-asset-item>
         <audio id="roar" src="./assets/roar.wav"></audio>
       </a-assets>
-      <a-entity event-listener id="trex-model"  
-        gltf-model="#trex" 
-        scale=".5 .5 .5" 
-        position = "0 0 -5" 
-        rotation="0 0 0" 
-      >
-      </a-entity>
       <a-sound src="#roar" autoplay="false"></a-sound>
       <a-entity cursor="rayOrigin:mouse"></a-entity>
       <a-entity cursor="fuse: true; fuseTimeout: 500"></a-entity>
